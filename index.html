@@ -43,8 +43,8 @@
         </style>
     </head>
     <body>
-        <header class="lg:mx-auto max-w-[1200px]">
-            <div class="navbar bg-base-100 font-manrope">
+        <header class="lg:mx-auto max-w-[1200px] m-0">
+            <div class="navbar font-manrope justify-between p-0">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div
@@ -69,7 +69,7 @@
                         </div>
                         <ul
                             tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] shadow rounded-box w-52"
                         >
                             <li><a class="text-hc-orange">Home</a></li>
                             <li><a class="text-hc-ash">About</a></li>
@@ -78,7 +78,7 @@
                             <li><a class="text-hc-ash">Contact</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-4xl font-extrabold">
+                    <a class="btn btn-ghost text-4xl font-extrabold text-left pl-0">
                         <p>Hockey<span class="text-hc-orange">’</span>s</p>
                     </a>
                 </div>
@@ -99,7 +99,61 @@
                 </div>
             </div>
         </header>
-        <main></main>
+        <main>
+            <!-- banner section -->
+            <section class="lg:mx-auto max-w-[1200px]">
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img
+                            src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+                            class="w-full"
+                        />
+                        <div
+                            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                        >
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <img
+                            src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+                            class="w-full"
+                        />
+                        <div
+                            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                        >
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <img
+                            src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+                            class="w-full"
+                        />
+                        <div
+                            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                        >
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide4" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full">
+                        <img
+                            src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+                            class="w-full"
+                        />
+                        <div
+                            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                        >
+                            <a href="#slide3" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
         <footer></footer>
     </body>
 </html>
