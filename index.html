@@ -578,9 +578,10 @@
                 <div class="dash-border my-4"></div>
             </div>
 
-            <div class="flex flex-col lg:flex-row ">
+            <div class="flex flex-col lg:flex-row gap-4">
                 <!-- side 1 -->
-                <div class="w-full lg:w-[40%] flex flex-col gap-4">
+                <div
+                    class="w-full lg:w-[40%] flex flex-col gap-4 justify-center items-center border-2 border-[#1313181A] rounded-lg">
                     <!-- card -1 -->
                     <div class="h-[220px] w-[90%] bg-[#BCED6D1A] mx-auto rounded-lg p-10">
                         <div>
@@ -615,7 +616,71 @@
                     </div>
                 </div>
                 <!-- side 2 -->
-                <div class="w-full lg:w-[60%]"></div>
+                <div class="w-full lg:w-[60%] mx-auto lg:ml-4">
+
+                    <div
+                        class="h-[800px] lg:h-[720px] grid grid-rows-8 lg:grid-rows-6 grid-cols-1 lg:grid-cols-2 gap-8 justify-center">
+                        <!-- name -->
+                        <div class="col-span-1 row-span-1">
+                            <label class="form-control w-full">
+                                <div class="label">
+                                    <span class="label-text font-bold text-xl">Your Name</span>
+                                </div>
+                                <input type="text" placeholder="Enter your full name"
+                                    class="text-sm input input-bordered w-full bg-[#13131805] border-none" />
+                            </label>
+                        </div>
+
+                        <!-- email -->
+                        <div class="col-span-1 row-span-1">
+                            <label class="form-control w-full">
+                                <div class="label">
+                                    <span class="label-text font-bold text-xl">Your Email</span>
+                                </div>
+                                <input type="text" placeholder="Enter your email"
+                                    class="text-sm input input-bordered w-full bg-[#13131805] border-none" />
+                            </label>
+                        </div>
+
+                        <!-- subject -->
+                        <div class="col-span-1 row-span-1">
+                            <label class="form-control w-full">
+                                <div class="label">
+                                    <span class="label-text font-bold text-xl">Subject</span>
+                                </div>
+                                <input type="text" placeholder="Enter your subject"
+                                    class="text-sm input input-bordered w-full bg-[#13131805] border-none" />
+                            </label>
+                        </div>
+
+                        <!-- phone -->
+                        <div class="col-span-1 row-span-1">
+                            <label class="form-control w-full">
+                                <div class="label">
+                                    <span class="label-text font-bold text-xl">Phone Number</span>
+                                </div>
+                                <input type="text" placeholder="Enter your phone number"
+                                    class="text-sm input input-bordered w-full bg-[#13131805] border-none" />
+                            </label>
+                        </div>
+
+                        <!-- textarea -->
+                        <div class="col-span-1 lg:col-span-2 row-span-3">
+                            <label class="form-control h-full flex flex-col justify-start">
+                                <div class="label">
+                                    <span class="label-text  font-bold text-xl">Message</span>
+                                </div>
+                                <textarea class="textarea textarea-bordered grow bg-[#13131805] border-none"
+                                    placeholder="Write your message"></textarea>
+                            </label>
+                        </div>
+
+                        <!-- submit button -->
+                        <div class="col-span-1 lg:col-span-2 row-span-1">
+                            <button class="btn bg-hc-orange w-full text-white">Send Message</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
